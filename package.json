@@ -1,0 +1,23 @@
+{
+  "name": "data-player",
+  "version": "1.0.0",
+  "description": "A set of libraries to play through sequential data through different mediums such as Maps (MapBox and Google Maps for location-based data), charts (D3), etc. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhdev/data-player.git"
+  },
+  "author": "Suhail Abood <suhail.abood@gmail.com> (suhailabood.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhdev/data-player/issues"
+  },
+  "homepage": "https://github.com/suhdev/data-player#readme",
+  "devDependencies": {
+    "babel-runtime": "^5.8.25",
+    "uglifyify": "^3.0.1"
+  }
+}
