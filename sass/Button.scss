@@ -1,0 +1,64 @@
+@import "partials/mixins";
+$button-border-radius:3px;
+$button-font-family:'Titillium Web',sans-serif;
+$color-default:#3469CC;
+$color-success:#34CC69;
+$color-danger:#C44;
+$button-text-color:#fff;
+
+$button-colors:$color-default $color-success $color-danger;
+$button-types:'default','success','danger';
+
+%shui-button{
+	@include NoTextSelect();
+	display:inline-block;	
+	padding:10px 20px;
+	font-size:1em;
+	line-height:1.2em;
+	cursor:pointer;
+	-webkit-border-radius: $button-border-radius;
+	-moz-border-radius: $button-border-radius;
+	-ms-border-radius: $button-border-radius;
+	-o-border-radius: $button-border-radius;
+	border-radius: $button-border-radius;
+	font-family:$button-font-family;
+	color:$button-text-color;
+}
+
+
+
+.shui-button{
+	@extend %shui-button;	
+	background-color:$color-default;
+
+	&:hover{
+		background-color: lighten($color-default, 10%);
+	}
+
+	&:active{
+		background-color: darken($color-default,10%);
+	}
+
+	@each $ccc in $button-types {
+		&.#{$ccc} , &[data-button-type="#{$ccc}"] {
+			$i:index($button-types, $ccc);
+			$color:nth($button-colors, $i);
+
+			background-color:$color;
+
+			&:hover{
+				background-color: lighten($color, 10%);
+			}
+
+			&:active{
+				background-color: darken($color,10%);
+			}
+		
+		}
+	}
+
+	&[data-state="disabled"],&[data-state="disabled"]:hover,&[data-state="disabled"]:active{
+		background-color:grayscale($color-default);
+
+	}
+}

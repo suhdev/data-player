@@ -1,0 +1,74 @@
+/* line 12, ../../sass/Button.scss */
+.shui-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  line-height: 1.2em;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+}
+
+/* line 30, ../../sass/Button.scss */
+.shui-button {
+  background-color: #3469CC;
+}
+/* line 34, ../../sass/Button.scss */
+.shui-button:hover {
+  background-color: #5d87d6;
+}
+/* line 38, ../../sass/Button.scss */
+.shui-button:active {
+  background-color: #2954a4;
+}
+/* line 43, ../../sass/Button.scss */
+.shui-button.default, .shui-button[data-button-type="default"] {
+  background-color: #3469CC;
+}
+/* line 49, ../../sass/Button.scss */
+.shui-button.default:hover, .shui-button[data-button-type="default"]:hover {
+  background-color: #5d87d6;
+}
+/* line 53, ../../sass/Button.scss */
+.shui-button.default:active, .shui-button[data-button-type="default"]:active {
+  background-color: #2954a4;
+}
+/* line 43, ../../sass/Button.scss */
+.shui-button.success, .shui-button[data-button-type="success"] {
+  background-color: #34CC69;
+}
+/* line 49, ../../sass/Button.scss */
+.shui-button.success:hover, .shui-button[data-button-type="success"]:hover {
+  background-color: #5dd687;
+}
+/* line 53, ../../sass/Button.scss */
+.shui-button.success:active, .shui-button[data-button-type="success"]:active {
+  background-color: #29a454;
+}
+/* line 43, ../../sass/Button.scss */
+.shui-button.danger, .shui-button[data-button-type="danger"] {
+  background-color: #C44;
+}
+/* line 49, ../../sass/Button.scss */
+.shui-button.danger:hover, .shui-button[data-button-type="danger"]:hover {
+  background-color: #d76c6c;
+}
+/* line 53, ../../sass/Button.scss */
+.shui-button.danger:active, .shui-button[data-button-type="danger"]:active {
+  background-color: #ae2f2f;
+}
+/* line 60, ../../sass/Button.scss */
+.shui-button[data-state="disabled"], .shui-button[data-state="disabled"]:hover, .shui-button[data-state="disabled"]:active {
+  background-color: gray;
+}

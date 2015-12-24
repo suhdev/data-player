@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+	<link href='https://fonts.googleapis.com/css?family=Biryani:400,300,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+	<link rel="stylesheet" href="../css/Button.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.min.js"></script>
+	<title>Events Manager</title>
+</head>
+<body>
+	<div class="screen-window">
+		<div id="canvas"></div>
+	</div>
+	<script type="text/javascript" src="../scripts/ui/common/Button.js"></script>
+	<script type="text/javascript">
+	var button = ReactDOM.render(React.createElement(shui.SHButton,{
+		icon:'icons',
+		label:'Test',
+		buttonType:'success',
+		enabled:true,
+	}),document.getElementById('canvas'));
+
+
+	</script>
+</body>
+</html>
